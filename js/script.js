@@ -11,3 +11,15 @@ del viaggio, secondo queste regole:
 Questo richiederà un minimo di ricerca.
 */
 
+/* 
+-memorizzare e chiedere numero kilometri da percorrere
+-memorizzare e chiedere l'età del passeggero
+-memorizzare prezzo biglietto 0.21€/km
+-IF cliente => 18 anni AND cliente =< 65 anni:
+    applicare prezzo pieno
+-ELSE cliente < 18 anni
+    applicare sconto 20%
+-ELSE cliente > 65 anni
+    applocare sconto 40%
+-stampare prezzo finale con massimo due decimali.
+*/
