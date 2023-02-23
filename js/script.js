@@ -26,10 +26,13 @@ Questo richiederà un minimo di ricerca.
 
 let costumerKm = parseInt(prompt("Quanti kilometri desideri percorrere?"));
 console.log("Inseriti kilometri da percorrere: " + costumerKm);
+
 let costumerAge = parseInt(prompt("Quanti anni dichiari di avere?"));
 console.log("Inserita età del cliente: " + costumerAge);
 
 // test
-let ticketPrice = parseInt(costumerKm * 0.21);
-console.log("Prezzo di prova: " + ticketPrice);
+let ticketPrice = (costumerKm * 0.21);
+// console.log(ticketPrice);
+let ticketPriceRounded = Math.round((ticketPrice + Number.EPSILON) * 100) / 100;
+console.log(`Prezzo di prova: ${ticketPriceRounded}`);
 
