@@ -23,3 +23,13 @@ Questo richiederà un minimo di ricerca.
     applocare sconto 40%
 -stampare prezzo finale con massimo due decimali.
 */
+
+let costumerKm = parseInt(prompt("Quanti kilometri desideri percorrere?"));
+console.log("Inseriti kilometri da percorrere: " + costumerKm);
+let costumerAge = parseInt(prompt("Quanti anni dichiari di avere?"));
+console.log("Inserita età del cliente: " + costumerAge);
+
+// test
+let ticketPrice = parseInt(costumerKm * 0.21);
+console.log("Prezzo di prova: " + ticketPrice);
+
