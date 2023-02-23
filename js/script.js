@@ -34,5 +34,17 @@ console.log("Inserita età del cliente: " + costumerAge);
 let ticketPrice = (costumerKm * 0.21);
 // console.log(ticketPrice);
 let ticketPriceRounded = Math.round((ticketPrice + Number.EPSILON) * 100) / 100;
-console.log(`Prezzo di prova: ${ticketPriceRounded}`);
+// console.log(`Prezzo di prova: ${ticketPriceRounded}`);
 
+let priceUnderAge;
+let priceOverAge;
+
+if (costumerAge < 18) {
+    priceUnderAge = Math.round(((ticketPrice - ((ticketPrice * 20) /100)) + Number.EPSILON) * 100) /100;
+    console.log(`Prezzo finale per minorenne: ${priceUnderAge}`)
+} else if (costumerAge > 65) {
+    priceOverAge = Math.round(((ticketPrice - ((ticketPrice * 40) /100)) + Number.EPSILON) * 100) /100;
+    console.log(`Prezzo finale per adulto over65: ${priceOverAge}`)
+} else {
+    console.log(`Prezzo finale per adulto: ${ticketPriceRounded}`) 
+}
